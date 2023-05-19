@@ -8,18 +8,18 @@ package Entidades;
  *
  * @author Gabriel
  */
-class Espectador {
+public class Espectador {
     private String nombre;
     private int edad;
-    private double dinero;
+    private double dineroDisponible;
 
     public Espectador() {
     }
 
-    public Espectador(String nombre, int edad, double dinero) {
+    public Espectador(String nombre, int edad, double dineroDisponible) {
         this.nombre = nombre;
         this.edad = edad;
-        this.dinero = dinero;
+        this.dineroDisponible = dineroDisponible;
     }
 
     public String getNombre() {
@@ -38,12 +38,13 @@ class Espectador {
         this.edad = edad;
     }
 
-    public double getDinero() {
-        return dinero;
+    public double getDineroDisponible() {
+        return dineroDisponible;
     }
 
-    public void setDinero(double dinero) {
-        this.dinero = dinero;
+    public void setDineroDisponible(double dineroDisponible) {
+        this.dineroDisponible = dineroDisponible;
     }
+    
     
 }

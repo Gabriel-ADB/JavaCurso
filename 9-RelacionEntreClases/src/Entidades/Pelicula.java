@@ -8,16 +8,22 @@ package Entidades;
  *
  * @author Gabriel
  */
-class Pelicula {
-    private String titulo = "Avatar";
-    private String director = "James Cameron";
-    private float duracion = 2.7f;    
-    private int edadMinima = 13;
+public class Pelicula {
+
+    private String titulo;
+    private int duracion;
+    private int edadMinima;
+    private String director;
 
     public Pelicula() {
     }
 
-    
+    public Pelicula(String titulo, int duracion, int edadMinima, String director) {
+        this.titulo = titulo;
+        this.duracion = duracion;
+        this.edadMinima = edadMinima;
+        this.director = director;
+    }
 
     public String getTitulo() {
         return titulo;
@@ -27,19 +33,11 @@ class Pelicula {
         this.titulo = titulo;
     }
 
-    public String getDirector() {
-        return director;
-    }
-
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public float getDuracion() {
+    public int getDuracion() {
         return duracion;
     }
 
-    public void setDuracion(float duracion) {
+    public void setDuracion(int duracion) {
         this.duracion = duracion;
     }
 
@@ -51,6 +49,14 @@ class Pelicula {
         this.edadMinima = edadMinima;
     }
 
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
     
     
+
 }
